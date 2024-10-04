@@ -12,7 +12,7 @@ function App() {
     function extractId(text: string) {
         const idRegex = /\?id=([^\s&]+)(?=<\/url>)/;
         const match = text.match(idRegex);
-        return match[1];
+        return match![1];
     }
 
     async function downloadImage(assetId: string) {
